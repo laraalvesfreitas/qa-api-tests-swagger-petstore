@@ -11,3 +11,6 @@ O projeto contempla a criação e execução de casos de teste, documentação d
 As requisições foram realizadas utilizando o Postman, com organização dos testes e evidências para garantir rastreabilidade e reprodutibilidade.
 
 Este projeto tem como objetivo demonstrar habilidades práticas em testes de API, pensamento analítico e capacidade de identificação de inconsistências em serviços REST.
+
+
+Obs: A API retorna campos adicionais com valores padrão mesmo quando não enviados no request, indicando um comportamento padrão do modelo de dados.
