@@ -1,0 +1,324 @@
+{
+  "info": {
+    "_postman_id": "1c6aa0f0-2343-43aa-a435-38241b95e95d",
+    "name": "API - Swagger Petstore",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21638368"
+  },
+  "item": [
+    {
+      "name": "Pet",
+      "item": [
+        {
+          "name": "Criar Pet dados mínimos válidos",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 10,\r\n     \"name\": \"Bob\",\r\n     \"status\": \"available\"\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Criar Pet todos dados válidos",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 123,\r\n  \"category\": {\r\n    \"id\": 2,\r\n    \"name\": \"Cachorros\"\r\n  },\r\n  \"name\": \"Karina\",\r\n  \"photoUrls\": [\r\n    \"https://images.dog.ceo/breeds/briard/n02105251_5630.jpg\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 9,\r\n      \"name\": \"pets\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Atualizar animal com dados válidos",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 31,\r\n  \"name\": \"Joaquim\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Atualizar animal com dados inválidos ou nulos",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": \"QBER\",\r\n  \"name\": \"Joaquim\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Upload imagem do pet",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "655dc8d8-ac1f-4a14-9096-38c09750c6df",
+                  "src": "/C:/Users/caoel/Downloads/planeta.png"
+                },
+                {
+                  "key": "additionalMetadata",
+                  "value": "Imagem planetas",
+                  "type": "text",
+                  "uuid": "01c36db9-54db-471d-91dc-c1125b6b2653"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet/123/uploadImage",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet",
+                "123",
+                "uploadImage"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar pet com Id inexistente",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet/55",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet",
+                "55"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar pet com Id inválido",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet/55          ",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet",
+                "55          "
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Pet cadastrado",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "655dc8d8-ac1f-4a14-9096-38c09750c6df",
+                  "src": "/C:/Users/caoel/Downloads/planeta.png"
+                },
+                {
+                  "key": "additionalMetadata",
+                  "value": "Imagem planetas",
+                  "type": "text",
+                  "uuid": "01c36db9-54db-471d-91dc-c1125b6b2653"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet/22",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet",
+                "22"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deletar pet",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "655dc8d8-ac1f-4a14-9096-38c09750c6df",
+                  "src": "/C:/Users/caoel/Downloads/planeta.png"
+                },
+                {
+                  "key": "additionalMetadata",
+                  "value": "Imagem planetas",
+                  "type": "text",
+                  "uuid": "01c36db9-54db-471d-91dc-c1125b6b2653"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet/123",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet",
+                "123"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
