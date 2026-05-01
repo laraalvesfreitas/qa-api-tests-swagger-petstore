@@ -70,8 +70,8 @@ Durante os testes, foram identificadas inconsistências importantes na API:
 
 | Tipo              |  Link |
 |------------------|------|
-| 🧪 Casos de Teste |[Ver casos](./casos-de-teste.md) |
-| 🐞 Bugs           |[Ver bugs](./bugs) |
+| 🧪 Casos de Teste |[Ver casos](/casos-de-teste.md) |
+| 🐞 Bugs           |[Ver bugs](/bugs) |
 
 ---
 
