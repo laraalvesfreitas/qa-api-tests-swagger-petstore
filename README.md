@@ -68,6 +68,11 @@ Durante os testes, foram identificadas inconsistências importantes na API:
 `/evidencias → Prints das execuções`
 
 
+| Tipo              |  Link |
+|------------------|------|
+| 🧪 Casos de Teste |[Ver casos](./casos-de-teste.md) |
+| 🐞 Bugs           |[Ver bugs](./bugs) |
+
 ---
 
 ## Ferramentas utilizadas
